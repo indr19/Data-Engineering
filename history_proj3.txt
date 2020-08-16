@@ -1,0 +1,1000 @@
+  621  cd REPOS/
+  622  ls -la
+  623  cd w205/
+  624  ls -la
+  625  cd course-content/
+  626  git pull --all
+  627  mkdir ../redis-standalone
+  628  ls -la
+  629  cp 05-Storing-Data-II/example-0-docker-compose.yml ../redis-standalone/
+  630  cd ../course-content/
+  631  ls -la
+  632  cd ../redis-standalone/
+  633  ls -la
+  634  vi example-0-docker-compose.yml 
+  635  docker-compose up -d
+  636  vi example-0-docker-compose.yml 
+  637  docker-compose up -d
+  638  vi example-0-docker-compose.yml 
+  639  docker-compose up -d
+  640  mv example-0-docker-compose.yml docker-compose.yml
+  641  docker-compose up -d
+  642  vi example-0-docker-compose.yml 
+  643  vi docker-compose.yml 
+  644  docker-compose up -d
+  645  vi docker-compose.yml 
+  646  history | grep pull
+  647  history | redis
+  648  history | grep redis
+  649  docker run -d --name freddy redis:latest
+  650  docker ps -a
+  651  docker-compose logs redis
+  652  pwd
+  653  ls -la
+  654  docker-compose docker-compose.yml logs redis
+  655  docker ps -a
+  656  docker rm 86e4de30a129
+  657  exit
+  658  docker-compose exec mids curl http://localhost:5000/
+  659  cd w205
+  660  cd proj3
+  661  cd 09/
+  662  docker-compose -f ./docker-compose.yml exec mids curl http://localhost:5000/
+  663  docker-compose -f ./docker-compose.yml exec mids curl http://localhost:5000/purchase_a_sword
+  664  vi basic_game_api.py
+  665  docker-compose -f ./docker-compose.yml exec mids curl http://localhost:5000/purchase_a_sword
+  666  docker-compose -f ./docker-compose.yml exec mids bash -c "kafkacat -C -b kafka:29092 -t events -o beginning
+  667  exit()
+  668  quit
+  669  -e
+  670  docker-compose -f ./docker-compose.yml exec mids bash -c "kafkacat -C -b kafka:29092 -t events -o beginning -e
+  671  "
+  672  vi basic_game_api.py
+  673  docker-compose -f ./docker-compose.yml down
+  674  cd ..
+  675  cd 10
+  676  ls -la
+  677  vi docker-compose.yml 
+  678  docker containers ls --all
+  679  docker container ls --all
+  680  docker rm container aa67a416fa6f
+  681  docker ps -aq
+  682  docker stop $(docker ps -aq)
+  683  cd w205
+  684  cd proj3
+  685  cd 09
+  686  ls -al
+  687  docker-compose -f ./docker-compose.yml -it exec bash 
+  688  docker-compose -it -f ./docker-compose.yml exec mids bash
+  689  docker-compose  -f ./docker-compose.yml exec mids bash
+  690  docker-compose -f ./docker-compose.yml down
+  691  history | grep FLASK
+  692  vi ~/.bash_history 
+  693  docker-compose -f ./docker-compose.yml exec mids env FLASK_APP=/w205/proj3/09/basic_game_api.py  flask run --host 0.0.0.0
+  694  pwd
+  695  cd w205
+  696  cd proj3/
+  697  cd 09/
+  698  docker-compose ./docker-compose.yml down
+  699  docker-compose -f ./docker-compose.yml down
+  700  ls -la
+  701  cd ..
+  702  cd 10/
+  703  cd ..
+  704  cd 09/
+  705  ls -la
+  706  docker-compose -f ./docker-compose.yml up
+  707  pwd
+  708  cd w205/
+  709  cd proj3/
+  710  cd 10
+  711  ls -la
+  712  vi docker-compose exec mids curl http://localhost:5000/
+  713  cd ..
+  714  ls -la
+  715  cd ..
+  716  ls -la
+  717  find . -name "basic*" -print
+  718  pwd
+  719  cd w205
+  720  ls -la
+  721  cd proj3/
+  722  ls -la
+  723  cd 09/
+  724  docker-compose exec mids curl http:..localhost:5000/
+  725  docker-compose exec mids curl http://localhost:5000/
+  726  vi docker-compose.yml 
+  727  cd ..
+  728  cd 10
+  729  ls -la
+  730  vi docker-compose.yml 
+  731  cd ..
+  732  cd 11
+  733  ls -la
+  734  vi docker-compose.yml 
+  735  ps -ef
+  736  ps -ef | grep Flask
+  737  ps -ef | grep py
+  738  cat docker-compose.yml 
+  739  docker image inspect midsw205
+  740  docker image ls --all
+  741  docker image inspect midsw205/base:latest
+  742  pwd
+  743  cd ../09/
+  744  ls -la
+  745  docker-compose -f ./docker-compose.yml exec mids bash
+  746  docker pull midsw205/base:latest
+  747  cd ..
+  748  ls -la
+  749  cd ..
+  750  ls -la
+  751  docker-compose  exec mids bash
+  752  pwd
+  753  cd proj3/
+  754  ls -la
+  755  cd 09/
+  756  docker-compose -f ./docker-compose.yml exec mids bash
+  757  cd ../
+  758  ls -la
+  759  cd ..
+  760  ls -la
+  761  git pull course-content/
+  762  git pull https://github.com/mids-w205-de-sola/course-content.git
+  763  cd course-content/
+  764  git pull https://github.com/mids-w205-de-sola/course-content.git
+  765  docker-compose -f ./docker-compose.yml exec mids bash
+  766  c d..
+  767  cd ..
+  768  cd proj3/
+  769  ls -la
+  770  cd 09/
+  771  ls -la
+  772  cd ..
+  773  cd 09/
+  774  docker-compose -f ./docker-compose.yml exec mids bash
+  775  pwd
+  776  history | grep FLASK
+  777  history | grep curl
+  778  docker-compose exec mids curl http:..localhost:5000/
+  779  docker-compose exec mids curl http://localhost:5000/
+  780  !
+  781  ls -la
+  782  vi basic_game_api.pyc
+  783  vi basic_game_api.py
+  784  history | grep bash
+  785  docker -version
+  786  docker version
+  787  docker-compose version
+  788  spark version
+  789  pyspark version
+  790  clear
+  791  ls -la
+  792  cd REPOS
+  793  ls -la
+  794  cd 2305
+  795  cd w205/
+  796  ls -la
+  797  mkdir project2
+  798  cd project
+  799  cd project2/
+  800  ls -la
+  801  docker run -it --rm -v midsw205/base bash
+  802  docker image ls --all
+  803  docker container ls -all
+  804  vi docker-compose.yml
+  805  docker run -it --rm -v midsw205/base:latest bash
+  806  ls -la
+  807  docker run -it --rm midsw205/base:latest bash
+  808  docker container list --all
+  809  docker run redis
+  810  docker image ls --all
+  811  docker ps -a
+  812  docker rm 86e4de30a129
+  813  docker stop 86e4de30a129
+  814  docker rm 86e4de30a129
+  815  docker stop 53eabb5e2c67
+  816  docker rm 53eabb5e2c67
+  817  docker ps -a
+  818  cd ..
+  819  ls -la
+  820  cd redis-standalone/
+  821  ls -la
+  822  docker-compose up -f ./docker-compose.yml 
+  823  docker-compose -f ./docker-compose.yml 
+  824  docker-compose -f ./docker-compose.yml up
+  825  vi docker-compose.yml 
+  826  docker-compose -f ./docker-compose.yml up
+  827  vi docker-compose.yml 
+  828  docker-compose -f ./docker-compose.yml up
+  829  vi docker-compose.yml 
+  830  docker-compose -f ./docker-compose.yml up
+  831  vi docker-compose.yml 
+  832  docker-compose -f ./docker-compose.yml up
+  833  vi docker-compose.yml 
+  834  cat docker-compose.yml 
+  835  docker-compose -f ./docker-compose.yml up
+  836  cat docker-compose.yml 
+  837  vi ~/docker-compose.yml 
+  838  vi docker-compose.yml 
+  839  docker-compose -f ./docker-compose.yml up
+  840  docker-compose down
+  841  docker-composecompose down
+  842  cd ..
+  843  ls-la
+  844  ls -al
+  845  cd kafka
+  846  ls -la
+  847  cat kafka* | grep "topic"
+  848  vi kafka-consume
+  849  cd 
+  850  vi assessment-attempts-20180128-121051-nested.json 
+  851  cat assessment-attempts-20180128-121051-nested.json | jq '.'
+  852  cat assessment-attempts-20180128-121051-nested.json | jq '.' > fred
+  853  vi fred
+  854  clear
+  855  ls -la
+  856  mv assessment-attempts-20180128-121051-nested.json head.json
+  857  curl -L -o assessment-attempts-20180128-121051-nested.json https://goo.gl/ME6hjp
+  858  ls -la
+  859  pwd
+  860  ls -la
+  861  ls -al w205/
+  862  ls -al w205/proj2/
+  863  ls -la
+  864  cd w205
+  865  ls -la
+  866  cd spark-with-kafka-and-hdfs/
+  867  ls -la
+  868  docker-compose -f ./docker-compose.yml up -d
+  869  ls -la
+  870  cp docker-compose.yml ../proj2/
+  871  ls -al ../proj2/
+  872  docker-compose ps
+  873  docker container ls --all
+  874  docker exec -it b1061e4ac158 bash
+  875  docker-compose -f ./docker-compose.yml down
+  876  cd ..
+  877  cd proj2/
+  878  ls -la
+  879  vi docker-compose.yml 
+  880  docker-compose -f ./docker-compose.yml up -d
+  881  docker-compose exec kafka  \    
+  882  docker-compose exec kafka kafka-topics --create --topic batch_assess --partitions 1 --replication-factor 1 --if-not-exists --zookeeper localhost:32181 
+  883  docker-compose -f ./docker-compose.yml exec kafka kafka-topics --create --topic batch_assess --partitions 1 --replication-factor 1 --if-not-exists --zookeeper localhost:32181 
+  884  vi docker-compose.yml 
+  885  docker exec -it b1061e4ac158 bash
+  886  docker container ps -a
+  887  docker exec -it a9a40245e438 bash
+  888  pwd
+  889  ls -la
+  890  ./kafka_topic
+  891  docker exec -it a9a40245e438 bash
+  892  ./kafka_topic 
+  893  docker-compose -f ./docker-compose.yml exec spark pyspark
+  894  ls -la
+  895  cd ..
+  896  cd course-content/09-Ingesting-Data/
+  897  ls -la
+  898  vi basic_game_api.py 
+  899  lls -la
+  900  ls -la
+  901  vi docker-compose.yml 
+  902  mkdir ~/w205/proj3
+  903  history | grep bash
+  904  docker containers ls -a
+  905  docker container ls -a
+  906  docker exec -it822314ccbd94 bash
+  907  docker exec -it 822314ccbd94 bash
+  908  docker-compose ps -a
+  909  ls -la
+  910  cd w205/
+  911  ls -la
+  912  cd proj3
+  913  ls -la
+  914  cd 09/
+  915  ls -la
+  916  docker-compose -f ./docker-compose.yml exec mids "ls -la"
+  917  docker-compose -f ./docker-compose.yml exec mids bash 'ls -la'
+  918  docker-compose -f ./docker-compose.yml exec mids bash "ls -la"
+  919  docker-compose -f ./docker-compose.yml exec mids bash 
+  920  docker-compose -f ./docker-compose.yml exec mids bash -c "ls -al"
+  921  pwd
+  922  ls -la
+  923  docker-compose -f ./docker-compose.yml exec mids bash -c "/w205/proj3/09/basic_game_api.py"
+  924  docker-compose -f ./docker-compose.yml exec mids bash 
+  925  docker-compose -f ./docker-compose.yml exec mids bash -c "ls -al"
+  926  docker-compose -f ./docker-compose.yml exec mids bash -c "pwd"
+  927  docker-compose -f ./docker-compose.yml exec mids bash -c "ls -la /w205/proj3/09"
+  928  ./basic_game_api.py 
+  929  docker-compose -f ./docker-compose.yml exec mids bash
+  930  history
+  931  docker-compose -f ./docker-compose.yml exec mids env FLASK_APP=/w205/proj3/09/basic/basic_game_api.py
+  932  docker-compose -f ./docker-compose.yml exec mids env FLASK_APP=/w205/proj3/09/basic/basic_game_api.py start
+  933  docker-compose -f ./docker-compose.yml exec mids env FLASK_APP=/w205/proj3/09/basic/basic_game_api.py  flask run --host 0.0.0.0
+  934  docker-compose -f ./docker-compose.yml exec mids env FLASK_APP=/proj3/09/basic/basic_game_api.py  flask run --host 0.0.0.0
+  935  docker-compose -f ./docker-compose.yml exec mids env FLASK_APP=proj3/09/basic/basic_game_api.py  flask run --host 0.0.0.0
+  936  pwd
+  937  docker-compose -f ./docker-compose.yml exec mids env FLASK_APP=~/w205/proj3/09/basic/basic_game_api.py  flask run --host 0.0.0.0
+  938  docker-compose -f ./docker-compose.yml exec mids env FLASK_APP=/w205/proj3/09/basic_game_api.py  flask run --host 0.0.0.0
+  939  sudo apt-get install r-base
+  940  ls -la
+  941  cd REPOS
+  942  ls -la
+  943  cd w205/
+  944  ls -la
+  945  cd proj3
+  946  ls -la
+  947  cd ..
+  948  ls -al
+  949  cd ..
+  950  ls -la
+  951  cd ..
+  952  ls -la
+  953  cd w205/
+  954  ls -la
+  955  cd course-content/
+  956  ls -la
+  957  ls -al
+  958  docker-compose containers ls --all
+  959  docker-compose ls --all
+  960  docker-compose status
+  961  docker-compose images ls --all
+  962  ls -la
+  963  history | grep bash
+  964  pip install --upgrade jupyterlab-git
+  965  history curl
+  966  history | grep curl
+  967  pwd
+  968  docker container ls --all
+  969  docker ps -a
+  970  docker-compose down 9a5f7e322be8
+  971  docker-compose 9a5f7e322be8 down
+  972  docker-compose down
+  973  history | grep "-f"
+  974  history | grep -f
+  975  history | grep "up"
+  976  docker-compose exec mids bash
+  977  pwd
+  978  cd REPOS/
+  979  ls -la
+  980  cd w205
+  981  ls -la
+  982  cd redis-standalone/
+  983  vi docker-compose.yml 
+  984  history | grep up
+  985  docker-compose -f ./docker-compose.yml up
+  986  vi docker-compose.yml 
+  987  docker image ls --all
+  988  vi docker-compose.yml 
+  989  docker-compose -f ./docker-compose.yml up
+  990  cd ..
+  991  cd kafka/
+  992  ls -la
+  993  vi kafka-consume
+  994  docker-compose exec kafka kafka-console-consumer --bootstrap-server kafka:29092 --topic foo --from-beginning --max-messages 42
+  995  docker-compose exec mids bash -c "kafkacat -C -b kafka:29092 -t foo -o beginning -e"
+  996  docker-compose exec mids bash -c "kafkacat -C -b kafka:29092 -t foo -o beginning -e" | wc -l
+  997  history | grep clone
+  998  pwd
+  999  ls -la
+ 1000  head github-example-large.json 
+ 1001  tail github-example-large.json 
+ 1002  vi github-example-large.json
+ 1003  cat github-example-large.json | grep "sha" | wc -l
+ 1004  vi github-example-large.json
+ 1005  cat github-example-large.json | grep "parents" | wc -l
+ 1006  cat github-example-large.json | grep "commit" | wc -l
+ 1007  cat github-example-large.json | grep "committer" | wc -l
+ 1008  vi github-example-large.json
+ 1009  cd ..
+ 1010  ls -la
+ 1011  cd w205
+ 1012  ls -la
+ 1013  docker ps -a
+ 1014  docker exec -it 02bf59c425f7 bash
+ 1015  ls -la
+ 1016  docker exec -it 02bf59c425f7 bash
+ 1017  pwd
+ 1018  ls -la
+ 1019  curl -L -o players.json https://goo.gl/vsuCpZ
+ 1020  docker exec -it 02bf59c425f7 bash
+ 1021  docker exec -it 84dac8af7261 bash
+ 1022  ls -la
+ 1023  cd spark-with-kafka-and-hdfs
+ 1024  docker-compose -f ./docker-compose.yml up -d
+ 1025  ls -la
+ 1026  docker-compose exec cloudera hadoop fs -ls /tmp/
+ 1027  ls -la
+ 1028  ls -al /tmp
+ 1029  history | grep exec
+ 1030  docker ps
+ 1031  pwd
+ 1032  ls -la
+ 1033  docker-compose ps
+ 1034  docker-compose exec cloudera hadoop fs -ls /tmp/
+ 1035  docker-compose exec bash 'ls -al /tmp'
+ 1036  docker ps
+ 1037  docker exec 947fdfe22d4b bash 'ls -al /tmp'
+ 1038  docker exec 947fdfe22d4b bash 'ls -al /w205/tmp'
+ 1039  docker exec 947fdfe22d4b bash 'ls -al /w205'
+ 1040  docker exec 947fdfe22d4b bash 'pwd'
+ 1041  docker exec 947fdfe22d4b bash pwd
+ 1042  docker exec 947fdfe22d4b pwd
+ 1043  docker exec 947fdfe22d4b 'ls -al'
+ 1044  docker exec 947fdfe22d4b ls -al
+ 1045  docker-compose exec kafka kafka-topics --create --topic players --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+ 1046  docker-compose exec mids bash -c "cat /w205/<your_workspace>/players.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t players"
+ 1047  docker-compose exec mids bash -c "cat /w205/players.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t players"
+ 1048  docker-compose exec spark pyspark
+ 1049  history
+ 1050  docker-compose -f ./docker-compose.yml down
+ 1051  pwd ls -la
+ 1052  pwd
+ 1053  ls -al
+ 1054  cd ..
+ 1055  ls -la
+ 1056  cd proj2
+ 1057  ls -la
+ 1058  vi assessment-attempts-20180128-121051-nested.json 
+ 1059  cat assessment-attempts-20180128-121051-nested.json | jq '.[]' -c v
+ 1060  vi assessment-attempts-20180128-121051-nested.json 
+ 1061  head assessment-attempts-20180128-121051-nested.json | jq '.'
+ 1062  head assessment-attempts-20180128-121051-nested.json 
+ 1063  cat assessment-attempts-20180128-121051-nested.json | jq '.
+ 1064  vi assessment-attempts-20180128-121051-nested.json 
+ 1065  cat assessment-attempts-20180128-121051-nested.json | grep "keen_timestamp" | wc -l
+ 1066  vi assessment-attempts-20180128-121051-nested.json 
+ 1067  cat assessment-attempts-20180128-121051-nested.json | grep "max_attempts" | wc -l
+ 1068  cat assessment-attempts-20180128-121051-nested.json | grep "started_at" | wc -l
+ 1069  cat assessment-attempts-20180128-121051-nested.json | grep "base_exam_id" | wc -l
+ 1070  cat assessment-attempts-20180128-121051-nested.json | grep "sequences" | wc -l
+ 1071  vi assessment-attempts-20180128-121051-nested.json 
+ 1072  cat assessment-attempts-20180128-121051-nested.json | grep "questions" | wc -l
+ 1073  man wc
+ 1074  !
+ 1075  cat assessment-attempts-20180128-121051-nested.json | grep "keen_timestamp" | wc -w
+ 1076  cat assessment-attempts-20180128-121051-nested.json | grep "max_attempts" | wc -w
+ 1077  cat assessment-attempts-20180128-121051-nested.json | grep "started_at" | wc -w
+ 1078  grep -o -i keen_timestamp assessment-attempts-20180128-121051-nested.json | wc -l
+ 1079  grep -o -i max_attempts assessment-attempts-20180128-121051-nested.json | wc -l
+ 1080  grep -o -i user_incomplete assessment-attempts-20180128-121051-nested.json | wc -l
+ 1081  grep -o -i user_correct assessment-attempts-20180128-121051-nested.json | wc -l
+ 1082  grep -o -i options assessment-attempts-20180128-121051-nested.json | wc -l
+ 1083  grep -o -i started_at assessment-attempts-20180128-121051-nested.json | wc -l
+ 1084  vi assessment-attempts-20180128-121051-nested.json 
+ 1085  cp assessment-attempts-20180128-121051-nested.json ~
+ 1086  vi assessment-attempts-20180128-121051-nested.json 
+ 1087  grep -o -i exam_name assessment-attempts-20180128-121051-nested.json | wc -l
+ 1088  grep -o -i exam_name assessment-attempts-20180128-121051-nested.json > jimmer
+ 1089  grep -o -i exam_name assessment-attempts-20180128-121051-nested.json > ~/jimmer
+ 1090  vi ~/jimmer 
+ 1091  ls -la
+ 1092  vi docker-compose.yml 
+ 1093  ls -al
+ 1094  docker-compose -f ./docker-compose.yml exec mids bash -c "cat ~/w205/proj2/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t batch_assess"
+ 1095  pwd
+ 1096  docker-compose -f ./docker-compose.yml exec mids bash -c "cat /home/jupyter/w205/proj2/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t batch_assess"
+ 1097  pwd
+ 1098  docker ps -a
+ 1099  docker-compose -f ./docker-compose.yml exec -it a9a40245e438 bash
+ 1100  docker-compose -f ./docker-compose.yml -it a9a40245e438 bash
+ 1101  docker-compose -f ./docker-compose.yml a9a40245e438 bash
+ 1102  history | grep bash
+ 1103  docker exec -it a9a40245e438 bash
+ 1104  history 
+ 1105  history > history.txt
+ 1106  history > ~/history.txt
+ 1107  pip install -U Flask
+ 1108  touch frede
+ 1109  ls -la
+ 1110  history | grep docker-compose
+ 1111  docker-compose -f ./docker-compose.yml up
+ 1112  docker-compose -f ./docker-compose.yml down
+ 1113  docker-compose -d -f ./docker-compose.yml up
+ 1114  docker-compose -f ./docker-compose.yml -d up
+ 1115  history | grep "-d"
+ 1116  history | grep -d
+ 1117  docker-compose -f ./docker-compose.yml up -d
+ 1118  cd ..
+ 1119  mkdir proj3
+ 1120  ls -la
+ 1121  pw
+ 1122  pwd
+ 1123  history | grep exec
+ 1124  cd proj2/
+ 1125  history | grep docker-compose
+ 1126  docker container ls --all
+ 1127  history | grep bash
+ 1128  docker exec -it 2dcf0b563972 bash
+ 1129  ls -la
+ 1130  docker-compose -f ./docker-compose.yml down
+ 1131  cd .
+ 1132  cd ..
+ 1133  cd proj3
+ 1134  ls -la
+ 1135  cd 09/
+ 1136  ls -la
+ 1137  vi docker-compose.yml 
+ 1138  docker-compose -f ./docker-compose.yml up -d
+ 1139  docker-compose -f ./docker-compose.yml down
+ 1140  docker images | grep mids
+ 1141  docker images ls --all
+ 1142  docker images -a
+ 1143  docker pull mids
+ 1144  vi docker-compose.yml 
+ 1145  docker images | grep mids
+ 1146  vi docker-compose.yml 
+ 1147  docker-compose status
+ 1148  docker-compose ps -a
+ 1149  docker containers ls
+ 1150  docker container ls
+ 1151  docker rm container aa67a416fa6f
+ 1152  docker stop container aa67a416fa6f
+ 1153  docker stop container proj3_kafka_1
+ 1154  docker container ls
+ 1155  docker stop container proj3_zookeeper_1
+ 1156  docker container ls
+ 1157  docker stop container proj3_mids_1
+ 1158  docker container ls
+ 1159  pwd
+ 1160  history | grep compose
+ 1161  docker-compose -f ./docker-compose.yml up -d
+ 1162  ls -la
+ 1163  docker-compose ps -a
+ 1164  history | greps bash
+ 1165  history | grep bash
+ 1166  docker-compose ps -a
+ 1167  docker container ls --all
+ 1168  docker docker exec -it e1ef4b7e295c bash
+ 1169  docker exec -it e1ef4b7e295c bash
+ 1170  ls -la
+ 1171  docker docker exec -it e1ef4b7e295c bash
+ 1172  docker exec -it e1ef4b7e295c bash
+ 1173  ls -la
+ 1174  ./kafka_topic 
+ 1175  docker exec -it e1ef4b7e295c bash
+ 1176  docker-compose -f ./docker-compose.yml exec mids env FLASK_APP=./basic_game_api.py
+ 1177  pwd
+ 1178  docker-compose -f ./docker-compose.yml exec mids env FLASK_APP=/w205/proj3/09/basic_game_api.py
+ 1179  docker-compose -f ./docker-compose.yml exec mids curl http://localhost:5000/
+ 1180  docker exec -it e1ef4b7e295c bash
+ 1181  docker-compose -f ./docker-compose.yml exec mids env FLASK_APP=/w205/proj3/09/basic_game_api.py
+ 1182  docker exec -it e1ef4b7e295c bash
+ 1183  docker container ls --all
+ 1184  docker-compose -f ./docker-compose.yml exec e1ef4b7e295c env FLASK_APP=/w205/proj3/09/basic_game_api.py
+ 1185  docker-compose -f ./docker-compose.yml exec 09_mids_1 env FLASK_APP=/w205/proj3/09/basic_game_api.py
+ 1186  docker-compose -f ./docker-compose.yml exec bash env FLASK_APP=/w205/proj3/09/basic_game_api.py
+ 1187  docker-compose -f ./docker-compose.yml exec proj3_mids_1 env FLASK_APP=/w205/proj3/09/basic_game_api.py
+ 1188  docker-compose -f ./docker-compose.yml exec mids bash 
+ 1189  docker exec -it e1ef4b7e295c bash
+ 1190  sudo apt install Flask
+ 1191  pip install Flask
+ 1192  sudo apt-get install python-virtualenv
+ 1193  docker exec -it e1ef4b7e295c bash
+ 1194  docker-compose -f ./docker-compose.yml exec bash /w205/proj3/09/basic_game_api.py
+ 1195  docker-compose -f ./docker-compose.yml exec mids bash /w205/proj3/09/basic_game_api.py
+ 1196  vi basic_game_api.py 
+ 1197  cat basic_game_api.py `
+ 1198  cat basic_game_api.py 
+ 1199  docker-compose -f ./docker-compose.yml exec mids python /w205/proj3/09/basic_game_api.py
+ 1200  docker-compose -f ./docker-compose.yml exec mids /w205/proj3/09/basic_game_api.py
+ 1201  ls -la
+ 1202  vi docker-compose.yml 
+ 1203  history | grep mids
+ 1204  ls -la
+ 1205  cd REPOS/
+ 1206  ls -ola
+ 1207  cd w205/
+ 1208  ls -la
+ 1209  cd project-1-oconnorcpj/
+ 1210  ls -la
+ 1211  pwd
+ 1212  cd ..
+ 1213  ls -la
+ 1214  pwd
+ 1215  cd REPOS/
+ 1216  ls -la
+ 1217  dc w205/
+ 1218  ls -la
+ 1219  cd w205/
+ 1220  ls -la
+ 1221  cd course-content/
+ 1222  ls -la
+ 1223  cd 09-Ingesting-Data/
+ 1224  ls -la
+ 1225  cd ..
+ 1226  ls -la
+ 1227  cd ..
+ 1228  ls -la
+ 1229  mkdir proj3
+ 1230  cd proj3/
+ 1231  cp ../course-content/09-Ingesting-Data/docker-compose.yml 
+ 1232  cp ../course-content/09-Ingesting-Data/docker-compose.yml .
+ 1233  ls -la
+ 1234  vi docker-compose.yml 
+ 1235  docker ps -a
+ 1236  cd ..
+ 1237  ls -la
+ 1238  cd w205/
+ 1239  cd ../..
+ 1240  ls -la
+ 1241  cd w205/
+ 1242  ls -la
+ 1243  cd proj2/
+ 1244  ls -la
+ 1245  docker-compose -f ./docker-compose.yml down
+ 1246  docker ps -a
+ 1247  docker images ls --all
+ 1248  docker images ls 
+ 1249  docker containers ls --all
+ 1250  cd ..
+ 1251  cd REPOS/
+ 1252  ls -la
+ 1253  cd w205/
+ 1254  ls -la
+ 1255  cd proj3
+ 1256  ls -la
+ 1257  docker images ls --all
+ 1258  docker image ls
+ 1259  docker-compose -r ./docker-compose.yml up -d
+ 1260  docker-compose -f ./docker-compose.yml up -d
+ 1261  cp ../kafka/kafka_topic .
+ 1262  vi kafka_topic 
+ 1263  ./kafka_topic 
+ 1264  vi ../course-content/09-Ingesting-Data/basic_game_api.py 
+ 1265  vi fred
+ 1266  ls -la
+ 1267  cd REPOS/
+ 1268  ls -al
+ 1269  ls -la
+ 1270  cd w205/
+ 1271  ls -la
+ 1272  cd kafka/
+ 1273  ls -la
+ 1274  pwd
+ 1275  cat kafka_topic 
+ 1276  vi fred
+ 1277  cd ../../..
+ 1278  ls -la
+ 1279  find . -name fred -print
+ 1280  vi fred
+ 1281  pwd
+ 1282  ls 0ak
+ 1283  ls -la
+ 1284  cd w205
+ 1285  cd proj2
+ 1286  ls -la
+ 1287  docker-compose -f docker-compose.yml exec cloudera hadoop fs -ls /tmp/
+ 1288  pwd
+ 1289  ls -la
+ 1290  docker-compose -f ./docker-compose.yml exec cat /root/.python_history > ~/pyspark_history.txt
+ 1291  docker-compose -f ./docker-compose.yml exec bash 'cat /root/.python_history > ~/pyspark_history.txt'
+ 1292  docker-compose -f ./docker-compose.yml exec 'cat /root/.python_history > ~/pyspark_history.txt'
+ 1293  docker-compose container ls --all
+ 1294  docker container ls --all
+ 1295  history | grep docker
+ 1296  ls -al /root
+ 1297  pwd
+ 1298  c d../../
+ 1299  c d..
+ 1300  cd ..
+ 1301  c d..
+ 1302  cd ..
+ 1303  pwd
+ 1304  cd /
+ 1305  ls -la
+ 1306  cd  roor
+ 1307  cd root
+ 1308  cd 
+ 1309  ls -la
+ 1310  rm pyspark_history.txt 
+ 1311  ls -la
+ 1312  vi jimmer
+ 1313  rm jimmer
+ 1314  ls -la
+ 1315  cd .ipython/
+ 1316  ls -la
+ 1317  cd profile_default/
+ 1318  ls -la
+ 1319  vi history.sqlite 
+ 1320  cd log/
+ 1321  ls -la
+ 1322  cd ..
+ 1323  ls -la
+ 1324  cd ..
+ 1325  ls -la
+ 1326  cd ..
+ 1327  ls -la
+ 1328  cd w205
+ 1329  ls -la
+ 1330  rm pyspark_history.txt 
+ 1331  ls -la
+ 1332  vi .bash_history 
+ 1333  ls -la
+ 1334  cd proj2/
+ 1335  ls -la
+ 1336  cp fred ~/bash_history_container
+ 1337  cd ~
+ 1338  history > bash_history.txt
+ 1339  vi bash_history
+ 1340  vi bash_history.txt 
+ 1341  vi bash_history_container 
+ 1342  mv bash_history_container bash_history_container.txt
+ 1343  vi history.txt 
+ 1344  clear
+ 1345  cat history.txt 
+ 1346  cd w205
+ 1347  ls -la
+ 1348  cd proj2/
+ 1349  cat docker-compose.yml 
+ 1350  docker run mids -d
+ 1351  pwd
+ 1352  cd REPOS/
+ 1353  cd w205/
+ 1354  mkdir kafka
+ 1355  cd kafka/
+ 1356  cd ..
+ 1357  find . -name "*.yml" -print
+ 1358  cp ./course-content/06-Transforming-Data/docker-compose.yml kafka/
+ 1359  cd kafka/
+ 1360  vi kafka
+ 1361  vi docker-compose.yml 
+ 1362  pwd
+ 1363  history | grep docker
+ 1364  docker-compose -f ./docker-compose.yml up
+ 1365  pwd
+ 1366  cp github-example-large.json ~/w205/
+ 1367  docker-compose -f docker-compose.yml down
+ 1368  docker container ls
+ 1369  docker container 9a5f7e322be8 down
+ 1370  docker container 9a5f7e322be8 stop
+ 1371  docker container ls
+ 1372  docker-compose container 4539332a2e34 down
+ 1373  docker-compose 4539332a2e34 down
+ 1374  docker-compose 4539332a2e34 stop
+ 1375  docker container ls --all
+ 1376  docker redis-standalone_mids_1 down
+ 1377  docker container redis-standalone_mids_1 down
+ 1378  docker --name redis-standalone_mids_1 down
+ 1379  docker-compose --name redis-standalone_mids_1 down
+ 1380  docker container ls
+ 1381  docker rm 4539332a2e34
+ 1382  docker stop 4539332a2e34
+ 1383  docker stop 9a5f7e322be8
+ 1384  docker container ls
+ 1385  docker container ls --all
+ 1386  pwd
+ 1387  ls -la
+ 1388  docker-compose -f ./docker-compose.yml 
+ 1389  history | grep docker-compose
+ 1390  docker-compose -f ./docker-compose.yml up
+ 1391  docker-compose ps 
+ 1392  docker container ls --all
+ 1393  docker stop 39d692a6ce63
+ 1394  docker stop a57a2d63ef3c
+ 1395  docker stop 49d106e5a2b1
+ 1396  docker-compose ps 
+ 1397  docker container ls --all
+ 1398  docker-compose kafka_kafka_1 down
+ 1399  ls -la
+ 1400  docker-compose -f ./docker-compose.yml down
+ 1401  docker-compose ps
+ 1402  docker container ls --all
+ 1403  cd ..
+ 1404  mkdir JSON
+ 1405  cd JSON
+ 1406  vi fred
+ 1407  vi single_message.json
+ 1408  docker-compose exec cloudera hadoop fs -ls /tmp/
+ 1409  cd ../..
+ 1410  cd ..
+ 1411  cd w205/
+ 1412  ls -la
+ 1413  cd spark-with-kafka-and-hdfs/
+ 1414  ls -la
+ 1415  docker-compose -f ./docker-compose.yml exec cloudera hadoop fs -ls /tmp/
+ 1416  ls -la
+ 1417  vi docker-compose.yml 
+ 1418  cat docker-compose.yml 
+ 1419  docker-compose logs -f kafka
+ 1420  docker-compose ps
+ 1421  cd REPOS/
+ 1422  ls -la
+ 1423  cd w205/
+ 1424  ls -al
+ 1425  cd kafka/
+ 1426  docker-compose -f docker-compose.yml ps
+ 1427  docker-compose -f docker-compose.yml logs zookeeper | grep -i binding
+ 1428  docker-compose logs -f ./docker-compose.yml kafka | grep -i started
+ 1429  docker-compose -f ./docker-compose.yml logs kafka | grep -i started
+ 1430  vi docker-compose.yml 
+ 1431  vi kafka_topic
+ 1432  ls -la
+ 1433  ./kafka_topic
+ 1434  chmod 755 kafka_topic 
+ 1435  ./kafka_topic 
+ 1436  cat kafka_topic 
+ 1437  vi kafka_topic 
+ 1438  ./kafka_topic 
+ 1439  cat kafka_topic 
+ 1440  vi kafka_topic 
+ 1441  ./kafka_topic 
+ 1442  cp kafka_topic kafka-describe
+ 1443  vi kafka-describe 
+ 1444  ./kafka-describe 
+ 1445  cat 
+ 1446  vi kafka-publish
+ 1447  cp kafka_topic kafka-publish
+ 1448  vi kafka-publish 
+ 1449  chmod 755 kafka-publish 
+ 1450  ./kafka-publish 
+ 1451  cat kafka-publish 
+ 1452  cat kafka-describe 
+ 1453  mv kafka-publish kafka-produce
+ 1454  cp kafka-produce kafka-consume
+ 1455  vi kafka-consume 
+ 1456  ./kafka-consume 
+ 1457  cat kafka-consume 
+ 1458  q!
+ 1459  ls -al
+ 1460  docker-compose -f ./docker-compose.yml down
+ 1461  curl -L -o github-example-large.json https://goo.gl/Y4MD58
+ 1462  ls -la
+ 1463  docker-compose -f ./docker-compose.yml up -d
+ 1464  docker-compose logs -f kafka
+ 1465  history
+ 1466  ls -la
+ 1467  vi kafka_topic 
+ 1468  docker-compose -f ./docker-compose.yml logs kafka | grep -i started
+ 1469  vi docker-compose.yml 
+ 1470  docker-compose logs -f kafka
+ 1471  docker-compose -f docker-compose.yml exec mids bash -c "cat /w205/kafka/github-example-large.json"
+ 1472  ls -la
+ 1473  docker-compose -f docker-compose.yml exec mids bash -c "github-example-large.json"
+ 1474  docker-compose exec mids bash -c "github-example-large.json"
+ 1475  docker-compose exec mids bash -c "cat github-example-large.json"
+ 1476  ls -la
+ 1477  docker-compose exec mids bash -c "cat ./github-example-large.json"
+ 1478  pwd
+ 1479  docker-compose exec mids bash -c "cat /home/jupyter/REPOS/w205/kafka/github-example-large.json"
+ 1480  ls -al home/jupyter/REPOS/w205/kafka/github-example-large.json
+ 1481  ls -al /home/jupyter/REPOS/w205/kafka/github-example-large.json
+ 1482  docker-compose exec mids bash -c "cat /home/jupyter/REPOS/w205/kafka/github-example-large.json"
+ 1483  ls -la
+ 1484  cd ll
+ 1485  cd ..
+ 1486  ls -la
+ 1487  cd kafka/
+ 1488  ls -la
+ 1489  cat github-example-large.json 
+ 1490  vi docker-compose.yml 
+ 1491  ls -al ~
+ 1492  cp docker-compose.yml ~/w205/
+ 1493  cd ~/w205
+ 1494  ls -la
+ 1495  cp ../REPOS/w205/kafka/docker-compose.yml .
+ 1496  cd ..
+ 1497  ls -la
+ 1498  chmod 777 w205
+ 1499  docker-compose container ls
+ 1500  docker-compose containers list --all
+ 1501  docker containers list --all
+ 1502  docker containers ls --all
+ 1503  pwd
+ 1504  ls -la
+ 1505  docker container ls
+ 1506  ls -la
+ 1507  cd w205
+ 1508  chmod 777 w205
+ 1509  ls -la
+ 1510  cd ..
+ 1511  chmod 777 w205
+ 1512  ls -la
+ 1513  df -hT
+ 1514  docker container ls --all
+ 1515  docker exec -it a57a2d63ef3c tty ubuntu bash
+ 1516  docker exec -it a57a2d63ef3c bash
+ 1517  pwd
+ 1518  ls -la
+ 1519  cd w205/
+ 1520  ls -la
+ 1521  cd spark-wth-kafka/
+ 1522  ls -la
+ 1523  docker-compose -f docker-compose.yml up
+ 1524  docker-compose -f docker-compose.yml down
+ 1525  docker-compose ps
+ 1526  docker-compose ls --all
+ 1527  docker-compose ls 
+ 1528  docker-compose -f docker-compose.yml up -d
+ 1529  docker-compose logs -f kafka
+ 1530  vi docker-compose.yml 
+ 1531  cp ~/REPOS/w205/kafka/kafka_topic .
+ 1532  docker-compose status
+ 1533  docker-compose ps
+ 1534  docker-compose exec kafka kafka-topics --create --topic foo --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+ 1535  docker-compose exec kafka kafka-topics --describe --topic foo --zookeeper zookeeper:32181
+ 1536  docker-compose exec kafka bash -c "seq 42 | kafka-console-producer --request-required-acks 1 --broker-list kafka:29092 --topic foo && echo 'Produced 42 messages.'"
+ 1537  docker-compose exec spark pyspark
+ 1538  ls -al
+ 1539  docker-compose -f ./docker-compose.yml down
+ 1540  docker-compose ls
+ 1541  docker-compose ps
+ 1542  history | grep Y4M
+ 1543  curl -L -o github-example-large.json https://goo.gl/Y4MD58
+ 1544  ls -la
+ 1545  docker-compose -f ./docker-compose.yml up -d
+ 1546  docker-compose ps
+ 1547  docker container ls --all
+ 1548  docker exec -it numbers_as_strings.printSchema()
+ 1549  docker exec -it bd5b1648a3dd bash
+ 1550  docker ps -a
+ 1551  docker-compose -f ./docker-compose.yml fown
+ 1552  docker-compose -f ./docker-compose.yml down
+ 1553  ls -la
+ 1554  cd ..
+ 1555  ls -la
+ 1556  cd spark-wth-kafka/
+ 1557  ls -la
+ 1558  docker-compose -f ./docker-compose.yml up
+ 1559  docker-compose ps
+ 1560  docker-compose -f ./docker-compose.yml fown
+ 1561  docker-compose -f ./docker-compose.yml down
+ 1562  docker ps
+ 1563  docker-compose ps
+ 1564  docker-compose -f ./docker-compose.yml up -d
+ 1565  ls -la
+ 1566  history | grep git
+ 1567  curl -L -o github-example-large.json https://goo.gl/Y4MD58
+ 1568  docker-compose ps
+ 1569  docker-compose ps -a
+ 1570  docker ps
+ 1571  docker exec -it 02bf59c425f7 bash
+ 1572  docker-compose logs -f kafka
+ 1573  docker-compose exec mids bash -c "cat /w205/spark-wth-kafka/github-example-large.json"
+ 1574  docker-compose exec mids bash -c "cat /w205/spark-wth-kafka/github-example-large.json | jq '.[]' -c"
+ 1575  docker-compose exec mids   bash -c "cat /w205/github-example-large.json \
+ 1576      | jq '.[]' -c \
+ 1577      | kafkacat -P -b kafka:29092 -t foo && echo 'Produced 100 messages.'"
+ 1578  docker-compose exec mids bash -c "cat /w205/spark-wth-kafka/github-example-large.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t foo && echo 'Produced 100 messages.'"
+ 1579  docker-compose exec spark pyspark
+ 1580  docker-compose -f ./docker-compose.yml down
+ 1581  docker-compose ps
+ 1582  docker-compose -f ./docker-compose.yml up -d
+ 1583  docker ps
+ 1584  docker-compose -f ./docker-compose.yml down
+ 1585  docker ps
+ 1586  history | grep exec
+ 1587  docker-compose exec cloudera hadoop fs -ls /tmp/
+ 1588  docker-compose ls --all
+ 1589  docker-compose ls
+ 1590  docker container ls --all
+ 1591  ls -la
+ 1592  cd ..
+ 1593  ls -la
+ 1594  cd spark-with-kafka-and-hdfs/
+ 1595  ls -la
+ 1596  vi docker-compose.yml 
+ 1597  pwd
+ 1598  cd w205
+ 1599  cd proj3
+ 1600  mkdir gui
+ 1601  cd 14
+ 1602  ls -la
+ 1603  docker container ls --all
+ 1604  docker-compose -f ./docker-compose.yml down
+ 1605  docker container ls --all
+ 1606  vi pilot_data.json 
+ 1607  history | grep cloudera
+ 1608  cd w205/proj3
+ 1609  cd 14
+ 1610  docker-compose -f ./docker-compose.yml exec cloudera hadoop fs -ls /tmp/
+ 1611  docker-compose -f ./docker-compose.yml exec cloudera hadoop fs -ls /tmp/pilot_enrolments
+ 1612  history | grep hive
+ 1613  ls -la
+ 1614  docker-compose -f ./docker-compose.yml exec spark spark-submit /w205/proj3/14/scifi_write_hive.py
+ 1615  docker-compose -f ./docker-compose.yml exec cloudera hadoop fs -ls /tmp/
+ 1616  docker-compose exec presto presto --server presto:8080 --catalog hive --schema default
+ 1617  docker-compose -f ./docker-compose.yml exec spark spark-submit /w205/proj3/14/scifi_write_hive.py
+ 1618  docker-compose exec presto presto --server presto:8080 --catalog hive --schema default
+ 1619  history
+ 1620  history > ~/history_proj3.txt 

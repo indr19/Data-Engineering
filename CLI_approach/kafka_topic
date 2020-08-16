@@ -1,0 +1,11 @@
+#!/bin/bash
+# Proper header for a Bash script.
+
+docker-compose exec kafka \
+  kafka-topics \
+    --create \
+    --topic starfighter \
+    --partitions 1 \
+    --replication-factor 1 \
+    --if-not-exists \
+    --zookeeper zookeeper:32181
